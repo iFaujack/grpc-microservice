@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+service Payload {
+  rpc GetPayload(PayloadReq) returns (PayloadResp) {}
+}
+message PayloadReq {
+}
+
+message PayloadResp {
+  string data = 1;
+}
